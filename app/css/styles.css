@@ -1,0 +1,60 @@
+@import 'https://fonts.googleapis.com/css?family=Inconsolata';
+@import 'https://fonts.googleapis.com/css?family=Raleway';
+
+body {
+  font-family: "Raleway", sans-serif;
+  text-align: center;
+}
+
+p, ul {
+  text-align: left;
+  margin-left: 20px;
+}
+
+code {
+  background-color: lightgrey;
+}
+
+pre {
+  width: 50%;
+  position: absolute;
+  left: 25%;
+}
+
+div {
+  border-bottom: 1px solid lightgrey;
+}
+
+/* Header stuff */
+#headerbar {
+  background-color: lightblue;
+  height: 50px;
+}
+
+.headerlink {
+  width: 100px;
+  line-height: 50px;
+  float: left;
+}
+
+#home {
+  font-family: "Inconsolata", monospace;
+  width: 150px;
+  line-height: 50px;
+  font-size: 20px;
+  text-decoration: underline;
+  position: absolute;
+  right: 0;
+}
+
+/* Title stuff */
+.title {
+  font-family: "Inconsolata", monospace;
+  font-size: 50px;
+  margin-top: 30px;
+  text-decoration: underline;
+}
+
+#intro {
+  border-bottom: 1px solid lightgrey;
+}

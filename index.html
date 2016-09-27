@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <link rel="stylesheet" type="text/css" href="app/css/styles.css">
+  <link rel="stylesheet" type="text/css" href="app/css/prism.css">
+  <script type="text/javascript" src="app/js/main.js"></script>
+  <script type="text/javascript" src="app/js/prism.js"></script>
+  <script type="text/javascript" src="app/js/lgc-highlight.js"></script>
+  <script type="text/javascript" src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
+</head>
+
+<body>
+  <div class="header"></div>
+  <div id="mainbody">
+    <div id="intro">
+      <h1 class="title">Logicode</h1>
+      <h3>Welcome to the Logicode Documentation.</h3>
+    </div>
+    <p>Logicode is a minimalistic language, based on three logic gates:</p>
+    <ul>
+      <li>AND (<code class="language-logicode">&</code>)</li>
+      <li>OR (<code class="language-logicode">|</code>)</li>
+      <li>NOT (<code class="language-logicode">!</code>)</li>
+    </ul>
+    <p>The rest, you have to do yourself.</p>
+    <p>You can make all sorts of things in Logicode, like circuits and conditionals.</p>
+    <p>Logicode provides you with tools, while you build whatever you need.</p>
+  </div>
+    <h3>Sample Code (w/ commentary):</h3>
+    <pre class="language-logicode"><code class="language-logicode">
+      circ asdf(n) -> [  # Defines a circuit called asdf, with 1 argument (n)
+          var jk = 1011  # Creates a variable called jk, set to 1011
+          jk&n           # Calculates AND of arg "n" and jk
+      ]                  # End circuit
+      out asdf(100)      # Outputs asdf(100)
+    </code></pre>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $(".header").load("html/header.html");
+    });
+  </script>
+</body>
+
+</html>
