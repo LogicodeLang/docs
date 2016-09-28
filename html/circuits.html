@@ -11,7 +11,15 @@
 <body>
   <div class="header"></div>
   <div id="circuits">
-    <p>This is the Circuits page.</p>
+    <p>To create a circuit, you have to do this:</p>
+
+<p><code>circ circuit_name(arg1, arg2...)-&gt;{what the function does}</code></p>
+
+<p><code>circ</code> is the circuit "declaration", and everything after the <code>-&gt;</code> is interpreted as code. </p>
+
+<p>Normal circuits have 1 bit as output, but if more bits are required, use the <code>+</code> symbol to separate bits, like this:</p>
+
+<p><code>circ circuit_name(arg1, arg2...)-&gt;{1st bit}+{2nd bit}+...</code></p>
   </div>
   <script type="text/javascript">
     $(document).ready(function() {
