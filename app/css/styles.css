@@ -3,58 +3,96 @@
 
 body {
   font-family: "Raleway", sans-serif;
-  text-align: center;
 }
 
-p, ul {
-  text-align: left;
-  margin-left: 20px;
+button {
+  font-family: "Raleway", sans-serif;
+  border: none;
+  background-color: #008CBA;
+  color: white;
+  border-radius: 10%;
 }
 
-code {
-  background-color: lightgrey;
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #008CBA;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.5s;
 }
 
-pre {
-  width: 50%;
-  position: absolute;
-  left: 25%;
+.link, .sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 20px;
+  line-height: 20px;
+  color: white;
+  display: block;
+  transition: 0.3s;
 }
 
-div {
+.clicked a {
+  padding: 0 8px 8px 50px;
+  font-size: 15px;
+  line-height: 15px;
+  transition: 0.5s;
+}
+
+.clicked {
+  display: none;
+}
+
+.sidenav a:hover, .link:hover {
+    color: #B0B0B0;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.sidelink {
+  height: 40px;
+}
+
+.animation {
+  float: left;
+  width: 20px;
+}
+
+.rest {
+  padding-left: 5px;
+  display: inline;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 20px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+#head {
   border-bottom: 1px solid lightgrey;
-}
-
-/* Header stuff */
-#headerbar {
-  background-color: lightblue;
+  background-color: #008CBA;
   height: 50px;
 }
 
-.headerlink {
-  width: 100px;
-  line-height: 50px;
-  float: left;
-}
-
-#home {
-  font-family: "Inconsolata", monospace;
-  width: 150px;
-  line-height: 50px;
-  font-size: 20px;
-  text-decoration: underline;
-  position: absolute;
-  right: 0;
-}
-
-/* Title stuff */
-.title {
-  font-family: "Inconsolata", monospace;
-  font-size: 50px;
-  margin-top: 30px;
-  text-decoration: underline;
-}
-
-#intro {
-  border-bottom: 1px solid lightgrey;
+.headbutton {
+  font-size: 25px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 10px;
+  height: 100%;
 }

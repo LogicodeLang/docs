@@ -1,0 +1,26 @@
+<html>
+
+<head>
+  <link rel="stylesheet" type="text/css" href="../app/css/styles.css">
+  <link rel="stylesheet" type="text/css" href="../app/css/prism.css">
+  <script type="text/javascript" src="../app/js/main.js"></script>
+  <script type="text/javascript" src="../app/js/prism.js"></script>
+  <script type="text/javascript" src="../app/js/prism-lgc.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+</head>
+
+<body>
+  <div id="side" class="sidenav"></div>
+  <div id="main">
+    <div id="head">
+      <button class="headbutton" onclick="openNav()"><</button>
+    </div>
+  </div>
+  <script>
+    $(document).ready(function() {
+      $("#side").load("../app/require/sidebar.html");
+    });
+  </script>
+</body>
+
+</html>
